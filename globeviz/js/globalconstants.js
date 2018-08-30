@@ -1,0 +1,1 @@
+const USER_SELECTION = "user-selection";
