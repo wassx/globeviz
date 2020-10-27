@@ -66076,7 +66076,7 @@ module.exports={
     "ghpages": "ghpages -p gh-pages/",
     "lint": "semistandard -v | snazzy",
     "precommit": "npm run lint",
-    "preghpages": "npm run dist && rimraf gh-pages && mkdirp gh-pages && cp -r {.nojekyll,dist,lib,examples,index.html,style} gh-pages/. 2>/dev/null || : && git checkout dist/ && replace 'build/aframe-master.js' 'dist/aframe-master.min.js' gh-pages/ -r --silent",
+    "preghpages": "npm run dist && rimraf gh-pages && mkdirp gh-pages && cp -r {.nojekyll,dist,lib,examples,indexAR.html,style} gh-pages/. 2>/dev/null || : && git checkout dist/ && replace 'build/aframe-master.js' 'dist/aframe-master.min.js' gh-pages/ -r --silent",
     "prerelease": "npm run dist && node scripts/release.js 0.4.0 0.5.0",
     "start": "npm run dev",
     "test": "karma start ./tests/karma.conf.js",
